@@ -1,0 +1,17 @@
+.team-Containers{
+   padding-top:100px;
+
+}
+.team-content-one{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+   width: fit-content;    /* تجعل العرض يعتمد على حجم العناصر */
+  margin: 0 auto;        
+  padding: 20px; 
+}
+
+.team-content{
+    width: 400px;
+  
+}

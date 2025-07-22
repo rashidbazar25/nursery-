@@ -1,0 +1,63 @@
+
+.Navbar-top{
+    background: linear-gradient(to right, #065b94, #8e44ad) ;
+    margin-bottom: 15px;
+ 
+}
+.Navbar{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   background-color: white;
+
+}
+
+.Navbar-top-content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  gap: 10px;
+   
+}
+.Navbar-top-content h3{
+
+    color: rgb(255, 255, 255);
+    
+}
+
+.link{
+  color: #3498db;             
+  text-decoration: none;      
+  font-weight: 900;            
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+  margin: 10px;
+  padding: 10px;
+}
+
+.link:hover {
+  color: #2c3e50;             
+  border-bottom: 2px solid #3498db;  
+}
+
+.link:active {
+  color: #e74c3c;             
+}
+.navbar-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height: 50px;
+   
+    
+   
+}
+
+.book-visit{
+    margin-right: 40px;
+    margin-bottom: 8px;
+}
+

@@ -20,6 +20,7 @@ const Regester = () => {
         }else{
             alert("فشل انشاء الحساب")
         }
+      
     }
 
   return (

@@ -22,12 +22,16 @@ const Login = () => {
         const data = await res.json() 
         if(data.token){
             localStorage.setItem("token" , data.token);
+               
 
             navigate("/home")
             
         }else{
             alert("فشل التسجيل")
+            setEmail("");
+               setPassword("");
         }
+     
     }
 
 
