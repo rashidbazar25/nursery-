@@ -11,15 +11,16 @@ import Contact from './Commponts/Contact'
 import Extracourses from './Commponts/Extracourses'
 import Daycare from './Commponts/Daycare'
 import Team from './Commponts/Team'
-import Navbar from './Commponts/Navbar'
+import { Container } from '@mui/material'
+import LandingPage from './Commponts/LandingPage'
 
 
 function App() {
 
   return (
    
-    <>
-     <Navbar/>
+    <Container maxWidth="lg">
+     <LandingPage/>
     <Routes>
       <Route path='/login' element = {<Login/>} />
       <Route path='/regester' element = {<Regester/>} />
@@ -39,7 +40,7 @@ function App() {
       }
       />
     </Routes>
-    </>
+    </Container>
   )
 }
 

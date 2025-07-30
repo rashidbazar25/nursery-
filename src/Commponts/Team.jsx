@@ -7,11 +7,13 @@ import { useSelector } from 'react-redux';
 
 const Team = () => {
   const teams = useSelector((state)=>state.Team);
-  //console.log(teams);
+  console.log(teams);
   
   
   return (
   <Container className='team-Containers' maxWidth="lg">
+
+    <h1 className='our-team'>OUR TEAM</h1>
 
       <div className='team-content-one' >
 
@@ -22,12 +24,12 @@ const Team = () => {
            <div key={index} className='team-content className="max-w-sm md:max-w-lg mx-auto md:mx-0 border border-gray-200 shadow-md rounded-md p-2'>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src={team.photoUrl} />
+              <Avatar alt="Remy Sharp" src={team.photoUrl}  />
            </ListItemAvatar>
 
 
         <ListItemText
-          primary={team.name}
+          primary={`Name :  ${team.name}`}
           secondary={
            <>
                <Typography
@@ -35,7 +37,7 @@ const Team = () => {
                 variant="body2"
                 sx={{ color: 'text.primary', display: 'flex' }}
               >
-                {team.role}
+                {`Role : ${team.role}`}
               </Typography>
 
                  <Typography
@@ -43,7 +45,8 @@ const Team = () => {
                 variant="body2"
                 sx={{ color: 'text.primary', display: 'flex' }}
               >
-                {team.Specialization}
+                
+                {`Specialization : ${team.Specialization}`}
               </Typography>
 
                    <Typography
@@ -51,16 +54,8 @@ const Team = () => {
                 variant="body2"
                 sx={{ color: 'text.primary', display: 'flex' }}
               >
-                {team.experience}
-              </Typography>
-
-
-                   <Typography
-                component="span"
-                variant="body2"
-                sx={{ color: 'text.primary', display: 'flex' }}
-              >
-                {team.certifications}
+               
+                {`Experience : ${team.experience}`}
               </Typography>
 
 
@@ -69,9 +64,10 @@ const Team = () => {
                 variant="body2"
                 sx={{ color: 'text.primary', display: 'flex' }}
               >
-                role
-              </Typography>
+                
+                {`Certifications : ${team.certifications}`}
 
+              </Typography>
              
            </>
      

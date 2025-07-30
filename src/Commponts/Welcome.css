@@ -1,0 +1,40 @@
+.welcom-content-all{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.welcom-text{
+font-size: 90px;
+font-weight: bold;
+  padding: 15px;
+  font-size: 70px;
+  color: #374f8f;
+  font-family: Comfortaa;
+}
+.welcome-paragraf{
+   color: #3076a5;
+    font-size: 32px;
+}
+.link-wel-content{
+margin-top: 30px;
+display: flex;
+justify-content: start;
+align-items: center;
+gap: 50px;
+}
+.link-welcome{
+    background-color: #3ab3a1;
+    color: white;
+    border-radius: 14px;
+    padding: 12px;
+    margin: 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+.link-welcome:hover{
+    background-color: #6ac9bb;
+    
+}

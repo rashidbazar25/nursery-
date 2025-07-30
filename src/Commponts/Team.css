@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-   width: fit-content;    /* تجعل العرض يعتمد على حجم العناصر */
+  width: fit-content; 
   margin: 0 auto;        
   padding: 20px; 
 }
@@ -14,4 +14,12 @@
 .team-content{
     width: 400px;
   
+}
+.our-team{
+  text-align: center;
+  padding: 15px;
+  font-size: 70px;
+  color: #374f8f;
+  font-family: Comfortaa;
+  font-weight: 900;
 }

@@ -1,0 +1,52 @@
+.Daily-schedule-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.Daily-schedule-text{
+  text-align: center;
+  padding: 15px;
+  font-size: 70px;
+  color: #374f8f;
+  font-family: Comfortaa;
+  font-weight: 900;
+}
+.Daily-schedule-paragraf{
+     color: #3076a5;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.Daily-schedule-morning-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-hours{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.Daily-schedule-morning-hours-content{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap:20px
+}
+.Daily-schedule-morning-hours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.statement{
+    color: #3076a5;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.time{
+    color: #374f8f;
+    font-size: 18px;
+}
