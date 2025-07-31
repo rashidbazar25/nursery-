@@ -17,7 +17,7 @@ const Welcome = () => {
                     A Multi-Lingual Kindergarten <br/> Pre-KG, KG1, KG2
                 </h4>
 
-                <h4 style={{color: "#3076a5" ,fontSize: "18px"}}>
+                <h4 style={{color: "#3076a5" ,fontSize: "19px"}}>
                     
                     <span style={{padding:"10px"}}>EN</span>
                     <span style={{padding:"10px"}}>FR</span> 
@@ -27,10 +27,10 @@ const Welcome = () => {
 
                 <div className='link-wel-content'>
                     <Link className='link-welcome'
-                                onClick={() => {
-    const footer = document.getElementById("footer");
-    if (footer) {
-      footer.scrollIntoView({ behavior: "smooth" });
+                    onClick={() => {
+                   const footer = document.getElementById("footer");
+                   if (footer) {
+                   footer.scrollIntoView({ behavior: "smooth" });
     }
   }}
                     >START TODAY</Link>
