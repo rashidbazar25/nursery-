@@ -3,6 +3,7 @@ import { TeamRuduser } from './TeamSlice'
 import { PriceRuduser } from './Price'
 import { costPriceSliceReduser } from './daycare'
 import { dailyScheduleSliceMorningReduser } from './DailyScheduleMorning'
+import { ReviewsSliceReduser } from './ReviewsSlice'
 
 export const store = configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export const store = configureStore({
     Price :PriceRuduser ,
     costPrice : costPriceSliceReduser,
     dailaySchedule:dailyScheduleSliceMorningReduser,
+    reviews : ReviewsSliceReduser
   },
 })

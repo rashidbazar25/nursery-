@@ -2,6 +2,7 @@ import Container from '@mui/material/Container';
 import './Daycare.css'
 import { useSelector } from 'react-redux';
 import baby from '../assets/baby.png'
+import OurPrice from './OurPrice';
 const Daycare = () => {
 
   const daycare = useSelector(state=>state.costPrice);
@@ -9,6 +10,7 @@ const Daycare = () => {
   const bagcolers = [ "#fdf28d" , "#eba9cb"]
 
   return (
+  <>
   <Container className='Containers' maxWidth="lg">
 
       <div className='daycare-content'>
@@ -22,15 +24,6 @@ const Daycare = () => {
       </div>
 
 
-
-
-
-
-
-
-
-
-
       <div className='daycare-center'>
 
        
@@ -41,8 +34,6 @@ const Daycare = () => {
       </div>
 
        <div className='sqear-content-all'>
-        
-
    {
     daycare.map((item,index)=>(
          <div key={index} className='sqear-content' style={{border: `6px solid ${bagcolers[index]}`}} >
@@ -74,7 +65,10 @@ const Daycare = () => {
 
 
       </div>
+      
   </Container>  
+  <OurPrice/>
+  </>
     )
 }
 

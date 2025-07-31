@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 const Team = () => {
   const teams = useSelector((state)=>state.Team);
-  console.log(teams);
+  //console.log(teams);
   
   
   return (

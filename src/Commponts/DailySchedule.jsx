@@ -2,6 +2,9 @@ import { Container } from '@mui/material'
 import './DailySchedule.css'
 import hours from '../assets/hour.png'
 import { useSelector } from 'react-redux'
+import Carousel from 'react-bootstrap/Carousel';
+
+
 const DailySchedule = () => {
 
     const daily = useSelector((state)=>state.dailaySchedule);
@@ -18,14 +21,14 @@ const DailySchedule = () => {
 
 
             <div className='Daily-schedule-morning-content'>
-                 <div style={{width:"20%"}}>morning</div>
-
-            <div className='Daily-schedule-morning-hours-content'>
+              <div style={{width:"10%"}}>morning</div>
+                <div className='Daily-schedule-morning-hours-content'>
                  {
                     daily.map((item,index)=>(
                      <div key={index} className='Daily-schedule-morning-hours'>
-                        
-                      <div style={{borderRadius:"50%" , width:"60px"}}><img className='img-hours' src={hours} alt='hours'/></div>
+                      <div style={{borderRadius:"50%" , width:"60px"}}>
+                        <img className='img-hours' src={hours} alt='hours'/>
+                      </div>
                       <div style={{width:"200px"}}><p className='time'>{item.time}</p></div>
                       <div><h6 className='statement'>{item.statment}</h6></div>
                     </div>
@@ -45,7 +48,25 @@ const DailySchedule = () => {
 
 
 
-            <div className='Daily-schedule-noon-content'></div> 
+            <div className='Daily-schedule-noon-content'>
+                <div style={{width:"10%"}}>noon</div>
+                <div className='Daily-schedule-morning-hours-content'>
+                 {
+                    daily.map((item,index)=>(
+                     <div key={index} className='Daily-schedule-morning-hours'>
+                      <div style={{borderRadius:"50%" , width:"60px"}}>
+                        <img className='img-hours' src={hours} alt='hours'/>
+                      </div>
+                      <div style={{width:"200px"}}><p className='time'>{item.time}</p></div>
+                      <div><h6 className='statement'>{item.statment}</h6></div>
+                    </div>
+
+                    ))
+                 }
+                
+            </div>
+              
+            </div> 
      </div>
     </Container>
   )

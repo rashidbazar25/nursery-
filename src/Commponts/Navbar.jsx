@@ -30,7 +30,7 @@ const Navbar = () => {
 
           <Link className='link' to='/about'>About</Link>
           <Link className='link' to='/approach'>Approach</Link>
-          <Link className='link' to='/extracourses'>Extra courses</Link>
+          <Link className='link' to='/gallery'>Gallery</Link>
           <Link className='link' to='/team'>TEAM</Link>
           <Link className='link' to='/daycare'>Day Care</Link>
           <Link className='link' to='/contact'>contacts</Link>
@@ -39,13 +39,16 @@ const Navbar = () => {
 
         <div>
            <Link className='book-visit'  to=''>
-             <Button style={{fontFamily:"Salsa"}} variant="outlined" color="secondary"> BOOK A VISIT</Button>
+             <Button style={{fontFamily:"Salsa"}} variant="outlined" color="secondary"
+             onClick={() => {
+    const footer = document.getElementById("footer");
+    if (footer) {
+      footer.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+             > BOOK A VISIT</Button>
            </Link>
         </div>
-
-        
-        
-
 
         </div>
 

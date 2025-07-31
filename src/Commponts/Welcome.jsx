@@ -26,7 +26,14 @@ const Welcome = () => {
                 </h4>
 
                 <div className='link-wel-content'>
-                    <Link className='link-welcome'>START TODAY</Link>
+                    <Link className='link-welcome'
+                                onClick={() => {
+    const footer = document.getElementById("footer");
+    if (footer) {
+      footer.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+                    >START TODAY</Link>
                     <h1 style={{display:"flex" , justifyContent:"center" , alignItems:"center" , gap:"20px" , marginLeft:"10px"}}><span ><Phone color='#3076a5'/></span> <span style={{color:"#3076a5" , fontSize:"18px"}}>00967 - 776049562</span></h1>
                 </div>
             </div>

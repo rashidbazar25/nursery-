@@ -18,6 +18,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 200px;
     gap:30px
 }
 .sqear-content-all{
@@ -29,8 +30,8 @@
 }
 .sqear-content{
  position: relative;
-  height: 120px;
-  width: 180px;
+  height: 180px;
+  width: 210px;
   padding: 8px;
  
 }
@@ -48,11 +49,16 @@
 .text-squar-one{
     text-align: center;
     margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
     
 }
 .text-squar-two{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    
 }
 
 

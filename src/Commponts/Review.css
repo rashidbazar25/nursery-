@@ -1,0 +1,63 @@
+
+.carousel-slide-content {
+  height: 300px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  flex-direction: column;  
+}
+.reviews-content{
+    margin-top: 30px;
+}
+.imgcarousel{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.pragraf-carousel{
+    color: #3076a5;
+    font-size: 18px;
+    text-align: center;
+    white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.reviews{
+  text-align: center;
+  padding: 15px;
+  font-size: 70px;
+  color: #374f8f;
+  font-family: Comfortaa;
+  font-weight: 900;
+}
+
+.Describe{
+    color: #374f8f;
+    font-size: 16px;
+    font-weight: bold;
+}
+.text-carousel{
+    color: #ff7373;
+    font-size: 14;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto; 
+  height: auto;
+  z-index: 2;
+}
+
+/* أقصى اليسار */
+.carousel-control-prev {
+  left: 0 !important;
+}
+
+/* أقصى اليمين */
+.carousel-control-next {
+  right: 0 !important;
+}
