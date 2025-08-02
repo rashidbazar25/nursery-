@@ -3,11 +3,15 @@ import { Container } from '@mui/material'
 import { Link } from 'react-router-dom'
 import child from '../assets/lern.png'
 import { Phone } from 'lucide-react';
+import Arrow from './Arrow';
 
 const Welcome = () => {
   return (
     <Container>
-        <div className='welcom-content-all'>
+        <>
+        
+       
+        <div className='welcom-content-all' id='welcome'>
             <div className='welcom-left'>
                 <h1 className='welcom-text'>
                     Welcome To <br/> AIST ROYAL ECC
@@ -41,7 +45,14 @@ const Welcome = () => {
                 <img src={child} alt='child'/>
             </div>
 
+
         </div>
+
+        
+            <div className='arrow' >
+                 <span ><Arrow/></span>
+            </div>
+         </>
     </Container>
   )
 }

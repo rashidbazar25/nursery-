@@ -29,19 +29,22 @@ function App() {
       <Route path='/login' element = {<Login/>} />
       <Route path='/regester' element = {<Regester/>} />
       <Route path='/about' element = {<About/>} />
-      <Route path='/approach' element = {<Approach/>} />
+      <Route path='/home' element = {<Home/>} />
       <Route path='/gallery' element = {<Gallery/>} />
       <Route path='/team' element = {<Team/>} />
       <Route path='/daycare' element = {<Daycare/>} />
       <Route path='/contact' element = {<Contact/>} />
-      <Route 
-      path='/home'
+
+          {/*  <Route 
+     path='/home'
       element={
-     // <ProtectedRout>
+     <ProtectedRout>
         <Home/>
-    //  </ProtectedRout>
-      }
-      />
+      </ProtectedRout>
+     }
+      />  */}
+
+    
     </Routes>
     </Container>
     <Foter/>

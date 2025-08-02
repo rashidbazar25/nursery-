@@ -21,7 +21,8 @@ const DailySchedule = () => {
 
 
             <div className='Daily-schedule-morning-content'>
-              <div style={{width:"10%"}}>morning</div>
+
+              <div style={{width:"300px"}}><h1 className='period'>Morning</h1></div>
                 <div className='Daily-schedule-morning-hours-content'>
                  {
                     daily.map((item,index)=>(
@@ -49,7 +50,7 @@ const DailySchedule = () => {
 
 
             <div className='Daily-schedule-noon-content'>
-                <div style={{width:"10%"}}>noon</div>
+                <div style={{width:"300px"}}><h1 className='period'>Noon</h1></div>
                 <div className='Daily-schedule-morning-hours-content'>
                  {
                     daily.map((item,index)=>(

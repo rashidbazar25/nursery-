@@ -57,3 +57,83 @@
     align-items: center;
     margin-top: 100px;
 }
+
+
+
+@media (max-width: 1024px) {
+  .Daily-schedule-text {
+    font-size: 50px;
+  }
+
+  .Daily-schedule-paragraf {
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .Daily-schedule-morning-content,
+  .Daily-schedule-noon-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .Daily-schedule-morning-hours-content {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .Daily-schedule-morning-hours {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .statement, .time {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Daily-schedule-text {
+    font-size: 40px;
+  }
+
+  .Daily-schedule-paragraf {
+    font-size: 15px;
+  }
+
+  .Daily-schedule-morning-hours-content {
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .Daily-schedule-morning-hours {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .time, .statement {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .Daily-schedule-text {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .Daily-schedule-paragraf {
+    font-size: 14px;
+  }
+
+  .img-hours {
+    width: 35px;
+    height: 35px;
+  }
+
+  .statement, .time {
+    font-size: 14px;
+  }
+}

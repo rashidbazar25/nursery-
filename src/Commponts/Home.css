@@ -62,3 +62,70 @@
 }
 
 
+@media (max-width: 1024px) {
+  .Navbar-top-content {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .Navbar-top-content h3 {
+    font-size: 16px;
+  }
+
+  .navbar-bottom {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navbar-bottom > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .book-visit {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .Navbar-top-content h3 {
+    font-size: 14px;
+  }
+
+  .Navbar-top-content {
+    padding: 5px 0;
+  }
+
+  .link {
+    font-size: 15px;
+  }
+
+  .navbar-bottom > div:first-child {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar-top-content h3 {
+    font-size: 13px;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .book-visit {
+    margin: 5px 0;
+  }
+}
