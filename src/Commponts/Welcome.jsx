@@ -4,21 +4,25 @@ import { Link } from 'react-router-dom'
 import child from '../assets/lern.png'
 import { Phone } from 'lucide-react';
 import Arrow from './Arrow';
+import { useTranslation } from 'react-i18next';
 
 const Welcome = () => {
+      const { t } = useTranslation();
+
+  
   return (
-    <Container >
+    <Container>
         <>
         
        
         <div className='welcom-content-all' id='welcome'>
             <div className='welcom-left'>
                 <h1 className='welcom-text'>
-                    Welcome To <br/> AIST ROYAL ECC
+                  {t('welcome')}
                 </h1>
 
                 <h4 className='welcome-paragraf'>
-                    A Multi-Lingual Kindergarten <br/> Pre-KG, KG1, KG2
+                    {t('kindergarten')}
                 </h4>
 
                 <h4 style={{color: "#3076a5" ,fontSize: "19px"}}>
@@ -37,7 +41,7 @@ const Welcome = () => {
                    footer.scrollIntoView({ behavior: "smooth" });
     }
   }}
-                    >START TODAY</Link>
+                    >{t('startToday')}</Link>
                     <h1 style={{display:"flex" , justifyContent:"center" , alignItems:"center" , gap:"20px" , marginLeft:"10px"}}><span ><Phone color='#3076a5'/></span> <span style={{color:"#3076a5" , fontSize:"18px"}}>00967 - 776049562</span></h1>
                 </div>
             </div>

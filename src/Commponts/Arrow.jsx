@@ -6,13 +6,13 @@ const Arrow = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const navElement = document.getElementById('welcome');
-      if (!navElement) return;
+      const welcomeElement = document.getElementById('welcome');
+      if (!welcomeElement) return;
 
-      const navBottom = navElement.getBoundingClientRect().bottom;
+      const welcomeBottom = welcomeElement.getBoundingClientRect().bottom;
 
-      // إذا كان nav لا يزال ظاهرًا، أخفِ السهم
-      if (navBottom > 0) {
+      // إذا كان welcome لا يزال ظاهرًا، أخفِ السهم
+      if (welcomeBottom > 0) {
         setIsHidden(true);
       } else {
         setIsHidden(false);

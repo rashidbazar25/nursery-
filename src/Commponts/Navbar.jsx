@@ -3,6 +3,7 @@ import { Phone } from 'lucide-react';
 import './Home.css'
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
+import LanguageSwitcher from './LanguageSwitcher';
 
 
 const Navbar = () => {
@@ -41,13 +42,17 @@ const Navbar = () => {
            <Link className='book-visit'  to=''>
              <Button style={{fontFamily:"Salsa"}} variant="outlined" color="secondary"
              onClick={() => {
-    const footer = document.getElementById("footer");
-    if (footer) {
-      footer.scrollIntoView({ behavior: "smooth" });
-    }
-  }}
+             const footer = document.getElementById("footer");
+               if (footer) {
+                footer.scrollIntoView({ behavior: "smooth" });
+                 }
+               }}
              > BOOK A VISIT</Button>
+
            </Link>
+
+                <Button style={{fontFamily:"Salsa", margin:"3px"}} variant="outlined" color="secondary" ><LanguageSwitcher /></Button>
+           
         </div>
 
         </div>
