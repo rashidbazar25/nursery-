@@ -7,7 +7,7 @@ import Arrow from './Arrow';
 
 const Welcome = () => {
   return (
-    <Container>
+    <Container >
         <>
         
        
