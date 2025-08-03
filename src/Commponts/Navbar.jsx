@@ -1,67 +1,50 @@
-import { MapPin } from 'lucide-react';
-import { Phone } from 'lucide-react';
-import './Home.css'
-import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
+import './Home.css';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-     const { t } = useTranslation();
-   
+  const location = useLocation();
+  const { t } = useTranslation();
+
+  const links = [
+    { to: '/home', label: 'navbar.home' },
+    { to: '/gallery', label: 'navbar.gallery' },
+    { to: '/team', label: 'navbar.team' },
+    { to: '/daycare', label: 'navbar.daycare' },
+    { to: '/about', label: 'navbar.about' },
+    { to: '/contact', label: 'navbar.contact' },
+  ];
+
   return (
-    <>
-        <div className='Navbar'>
-
-           <div className='Navbar-top'> 
-            <div className='Navbar-top-content'>
-                <div><MapPin color='#ffffff'/></div>
-
-                <div style={{display:"flex", justifyContent:"center" , alignItems:"center" , gap:"20px" }}>
-                    <h3>{t('navbar.address')}</h3>
-                     <Phone size={18} color='#ffffff' /> <span style={{color:"white"}}>{t(`navbar.mobile`)} </span>  
-                </div>
-            </div>
-           </div>
-
-
-  
-
-        <div className='navbar-bottom'>
-
-        <div>
-
-          <Link className='link' to='/home'>{t('navbar.home')}</Link>
-          <Link className='link' to='/gallery'>{t('navbar.gallery')}</Link>
-          <Link className='link' to='/team'>{t('navbar.team')}</Link>
-          <Link className='link' to='/daycare'>{t('navbar.daycare')}</Link>
-          <Link className='link' to='/about'>{t('navbar.about')}</Link>
-          <Link className='link' to='/contact'>{t('navbar.contact')}</Link>
-
+    <div className='Navbar'>
+      <div className='navbar-bottom'>
+        <div className='links-nav'>
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              to={link.to}
+              style={{
+                cursor: 'pointer',
+                margin: '0 10px',
+                textDecoration: 'none',
+                color: location.pathname === link.to ? '#2c3e50' : '#3498db',
+                fontWeight: location.pathname === link.to ? 'bold' : 'normal',
+              }}
+              className='link'
+            >
+              {t(link.label)}
+            </Link>
+          ))}
         </div>
 
-        <div>
-           <Link className='book-visit'>
-             <Button style={{fontFamily:"Salsa"}} variant="outlined" color="secondary"
-             onClick={() => {
-             const footer = document.getElementById("footer");
-               if (footer) {
-                footer.scrollIntoView({ behavior: "smooth" });
-                 }
-               }}
-             > {t('buttons.bookVisit')} </Button>
-
-           </Link>
-
-                <Button style={{fontFamily:"Salsa", margin:"3px"}} variant="outlined" color="secondary" ><LanguageSwitcher /></Button>
-           
+       
+        <div className='language-switcher'>
+          <LanguageSwitcher />
         </div>
+      </div>
+    </div>
+  );
+};
 
-        </div>
-
-        </div>
-    </>
-  )
-}
-
-export default Navbar
+export default Navbar;

@@ -1,42 +1,112 @@
-.welcom-content-all{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.welcom-content-all {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* عمودين متساويين */
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  direction: inherit; /* ورث الاتجاه من الـ html */
+  
 }
-.welcom-text{
-font-size: 40px;
-font-weight: bold;
-  padding: 15px;
+
+html[dir="rtl"] .welcom-content-all {
+  direction: rtl;
+}
+
+html[dir="ltr"] .welcom-content-all {
+  direction: ltr;
+}
+.welcom-left {
+  order: 1;
+}
+
+.welcom-right {
+  order: 2;
+}
+
+html[dir="rtl"] .welcom-left {
+  order: 2;
+}
+
+html[dir="rtl"] .welcom-right {
+  order: 1;
+}
+
+.welcom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.welcom-right  {
+  display: flex;
+  justify-content: right;
+
+}
+
+.welcom-right img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.welcom-text {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 15px 0;
   color: #374f8f;
   font-family: Comfortaa;
 }
-.welcome-paragraf{
-   color: #3076a5;
-    font-size: 32px;
+
+.welcome-paragraf {
+  color: #3076a5;
+  font-size: 32px;
 }
-.link-wel-content{
-margin-top: 30px;
-display: flex;
-justify-content: start;
-align-items: center;
-gap: 50px;
+
+.link-wel-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
 }
-.link-welcome{
-    background-color: #3ab3a1;
-    color: white;
-    border-radius: 14px;
-    padding: 6px;
-    font-size: 16px;
-    width: 100px;
+
+.link-welcome {
+  background-color: #3ab3a1;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.link-welcome:hover {
+  background-color: #6ac9bb;
+}
+
+@media (max-width: 768px) {
+  .welcom-content-all {
+    grid-template-columns: 1fr; /* ✅ عمود واحد فقط */
     text-align: center;
-    text-decoration: none;
-   
-}
-.link-welcome:hover{
-    background-color: #6ac9bb;
-    
+  }
+
+  .welcom-left {
+    align-items: center;
+  }
+
+  .link-wel-content {
+    justify-content: center;
+  }
+
+  .welcom-text {
+    font-size: 28px;
+  }
+
+  .welcome-paragraf {
+    font-size: 24px;
+  }
 }
 
 .arrow {

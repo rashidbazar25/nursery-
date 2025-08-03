@@ -12,7 +12,6 @@ const LandingPage = () => {
     <>
     <Container className='Containers' maxWidth="lg">
     <Welcome/>
-    <Navbar/>
     <OurPrice/>
     <DailySchedule/>
     <Team/>

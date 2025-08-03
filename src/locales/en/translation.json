@@ -13,7 +13,7 @@
   
   "buttons": {
     "bookVisit": "BOOK A VISIT",
-    "startToday": "START TODAY"
+    "startToday": "Subscribe now"
   },
 
 
@@ -29,7 +29,7 @@
     "specialization": "Specialization",
     "experience": "Experience",
     "certifications": "Certifications",
-    "OUR TEAM":"OUR TEAM"
+    "OUR TEAM":"TEAM"
   },
   "roles": {
     "1 - 2 Years": "1 - 2 Years",
@@ -49,8 +49,8 @@
     "TERM 2": "TERM 2",
     "TERM 3": "TERM 3",
     "Month": "4 weeks",
-    "hours": " Hours",
-    "ourprice" :"Our Price",
+    "Hours": " Hours",
+    "ourprice" :" Price",
      "years" :"For 2024 - 2025 years"
   },
    "dailySchedule": {

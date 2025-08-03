@@ -1,36 +1,27 @@
-
-.Navbar-top{
-    background: linear-gradient(to right, #065b94, #8e44ad) ;
-    margin-bottom: 15px;
- 
-}
-.Navbar{
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   z-index: 1000;
-   background-color: white;
-
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.Navbar-top-content{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  gap: 10px;
-   
-}
-.Navbar-top-content h3{
-
-    color: rgb(255, 255, 255);
-    
+.links-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* ✅ بدلاً من width: 100vw */
+  overflow: hidden; /* ✅ يمنع التمدد عند فتح select */
 }
 
-.link{
-  color: #3498db;             
-  text-decoration: none;      
-  font-weight: 900;            
+.link {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   border-bottom: 2px solid transparent;
   margin: 10px;
@@ -38,30 +29,27 @@
 }
 
 .link:hover {
-  color: #2c3e50;             
-  border-bottom: 2px solid #3498db;  
+  color: #3498db;
+  border-bottom: 2px solid #2c3e50;
 }
 
-.link:active {
-  color: #e74c3c;             
-}
-.navbar-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    height: 50px;
-   
-    
-   
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+    overflow: hidden; /* ✅ يمنع التمدد عند فتح السليكت */
+
 }
 
-.book-visit{
-    margin-right: 40px;
-    margin-bottom: 8px;
+.language-switcher {
+  flex-shrink: 0;
 }
 
-
+/* Responsive Design */
 @media (max-width: 1024px) {
   .Navbar-top-content {
     flex-direction: column;
@@ -98,14 +86,6 @@
 }
 
 @media (max-width: 768px) {
-  .Navbar-top-content h3 {
-    font-size: 14px;
-  }
-
-  .Navbar-top-content {
-    padding: 5px 0;
-  }
-
   .link {
     font-size: 15px;
   }
@@ -116,10 +96,6 @@
 }
 
 @media (max-width: 480px) {
-  .Navbar-top-content h3 {
-    font-size: 13px;
-  }
-
   .link {
     font-size: 14px;
     padding: 8px;
