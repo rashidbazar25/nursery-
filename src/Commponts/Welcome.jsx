@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const Welcome = () => {
       const { t } = useTranslation();
-
+   
   
   return (
     <Container>
@@ -18,11 +18,11 @@ const Welcome = () => {
         <div className='welcom-content-all' id='welcome'>
             <div className='welcom-left'>
                 <h1 className='welcom-text'>
-                  {t('welcome')}
+                  {t('welcome.heading')}
                 </h1>
 
                 <h4 className='welcome-paragraf'>
-                    {t('kindergarten')}
+                    {t('welcome.kindergarten')}
                 </h4>
 
                 <h4 style={{color: "#3076a5" ,fontSize: "19px"}}>
@@ -39,9 +39,9 @@ const Welcome = () => {
                    const footer = document.getElementById("footer");
                    if (footer) {
                    footer.scrollIntoView({ behavior: "smooth" });
-    }
-  }}
-                    >{t('startToday')}</Link>
+                }
+            }}
+                    > {t('buttons.startToday')}</Link>
                     <h1 style={{display:"flex" , justifyContent:"center" , alignItems:"center" , gap:"20px" , marginLeft:"10px"}}><span ><Phone color='#3076a5'/></span> <span style={{color:"#3076a5" , fontSize:"18px"}}>00967 - 776049562</span></h1>
                 </div>
             </div>

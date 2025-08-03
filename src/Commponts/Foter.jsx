@@ -5,13 +5,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import { MapPin } from 'lucide-react';
 import { Phone } from 'lucide-react';
 import { Mail } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Foter = () => {
+    const { t } = useTranslation();
+
      const notify = () => toast("تم إرسال طلبك بنجاح سيتم الرد عليك خلال يوم");
 
     const form = useRef();
 
-  const sendEmail = (e) => {
+    const sendEmail = (e) => {
     
     e.preventDefault();
     
@@ -32,15 +35,15 @@ const Foter = () => {
   return (
     <div className='foter' id='footer'>
       <div className='left-foter'>
-        <h1 style={{color:"white" , margin:"4px" , padding:"10px"}}>our contacts</h1>
+        <h1 style={{color:"white" , margin:"4px" , padding:"10px"}}>{t("footer.ourContacts")}</h1>
         <div style={{display:"flex" , justifyContent:"center", alignItems :"center", gap:"15px"}}>
           <MapPin style={{marginBottom:"10px"}} size={25} color='#fff'/>
-          <h6>Hadhramaut - Al-Qatn - Hadrami Square - villa 25</h6>
+          <h6>{t('navbar.address')}</h6>
         </div>
 
         <div style={{display:"flex" , justifyContent:"center", alignItems :"center", gap:"15px"}} >
           <Phone style={{marginBottom:"10px"}} size={25} color='#fff'/>
-          <h6>00967 - 776049562 </h6>
+          <h6>{t(`navbar.mobile`)} </h6>
         </div>
 
         <div style={{display:"flex" , justifyContent:"center", alignItems :"center", gap:"15px"}}>
@@ -54,17 +57,17 @@ const Foter = () => {
         <div className="form-container">
 
           <div className="form-item">
-            <label className="form-label">Name</label>
+            <label className="form-label">{t("footer.name")}</label>
             <input required type="text" name="sender_name" className="form-input" />
           </div>
 
           <div className="form-item">
-            <label className="form-label">Email</label>
+            <label className="form-label">{t("footer.email")}</label>
             <input required type="email" name="sender_email" className="form-input" />
           </div>
 
           <div className="form-item">
-  <label htmlFor="message" className="form-label">Message</label>
+  <label htmlFor="message" className="form-label">{t("footer.message")}</label>
   <textarea
     id="message"
     name="message"
@@ -78,7 +81,7 @@ const Foter = () => {
           <div className="form-item">
   <input
     type="submit"
-    value="Send"
+    value={t("footer.send")}
     className="form-submit"
     onClick={notify}
   />

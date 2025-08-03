@@ -14,9 +14,10 @@
   font-weight: 900;
 }
 .Daily-schedule-paragraf{
-     color: #3076a5;
+     color: #374f8f;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
 .Daily-schedule-morning-content {
     display: flex;
@@ -49,6 +50,11 @@
 .time{
     color: #374f8f;
     font-size: 18px;
+}
+.period{
+  padding: 10px;
+  margin-left: 80px;
+  text-align: center;
 }
 
 .Daily-schedule-noon-content{

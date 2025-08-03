@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+body[lang="ar"] {
+  direction: rtl;
+  font-family: 'Tajawal';
+}
+
+body[lang="en"] {
+  direction: ltr;
+  font-family: 'Comfortaa';
+}

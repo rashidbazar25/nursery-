@@ -2,18 +2,20 @@ import { Avatar, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui
 import Container from '@mui/material/Container';
 import './Team.css'
 import { useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 
 
 const Team = () => {
   const teams = useSelector((state)=>state.Team);
   //console.log(teams);
-  
+  const { t } = useTranslation();
+
   
   return (
   <Container className='team-Containers' maxWidth="lg">
 
-    <h1 className='our-team'>OUR TEAM</h1>
+    <h1 className='our-team'>{t(`team.OUR TEAM`)}</h1>
 
       <div className='team-content-one' >
 
@@ -26,10 +28,14 @@ const Team = () => {
             <ListItemAvatar>
               <Avatar alt="Remy Sharp" src={team.photoUrl}  />
            </ListItemAvatar>
-
+  
 
         <ListItemText
-          primary={`Name :  ${team.name}`}
+          primary={<Typography
+      sx={{ direction: t('dir'), display: 'flex', fontWeight: 'bold' }}
+    >
+      {`${t('team.name')} : ${t(`${team.name}`)}`}
+    </Typography>}
           secondary={
            <>
                <Typography
@@ -37,7 +43,7 @@ const Team = () => {
                 variant="body2"
                 sx={{ color: 'text.primary', display: 'flex' }}
               >
-                {`Role : ${team.role}`}
+               {`${t('team.role')} : ${t(`roles.${team.role}`)}`}
               </Typography>
 
                  <Typography
@@ -46,7 +52,7 @@ const Team = () => {
                 sx={{ color: 'text.primary', display: 'flex' }}
               >
                 
-                {`Specialization : ${team.Specialization}`}
+               {`${t('team.specialization')} : ${t(`specializations.${team.Specialization}`)}`}
               </Typography>
 
                    <Typography
@@ -55,7 +61,7 @@ const Team = () => {
                 sx={{ color: 'text.primary', display: 'flex' }}
               >
                
-                {`Experience : ${team.experience}`}
+                {`${t('team.experience')} : ${team.experience}`}
               </Typography>
 
 
@@ -65,7 +71,7 @@ const Team = () => {
                 sx={{ color: 'text.primary', display: 'flex' }}
               >
                 
-                {`Certifications : ${team.certifications}`}
+                {`${t('team.certifications')} : ${t(`certifications.${team.certifications}`)}`}
 
               </Typography>
              

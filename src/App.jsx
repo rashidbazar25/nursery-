@@ -16,9 +16,18 @@ import LandingPage from './Commponts/LandingPage'
 import Navbar from './Commponts/Navbar'
 import Foter from './Commponts/Foter'
 
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+   
+  // language web ar - tjwel en comp...
+    const { i18n } = useTranslation();
 
+  useEffect(() => {
+    document.body.setAttribute('lang', i18n.language);
+  }, [i18n.language]);
+ // language web ar - tjwel en comp...
   return (
    
    <>

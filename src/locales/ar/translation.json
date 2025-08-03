@@ -1,5 +1,88 @@
 {
-  "welcome": "مرحبًا بكم في موقعنا",
-  "kindergarten": "روضة متعددة اللغات",
-  "startToday": "ابدأ اليوم"
+  "navbar": {
+    "home": "الرئيسية",
+    "gallery": "المعرض",
+    "team": "الفريق",
+    "daycare": "رعاية يومية",
+    "about": "من نحن",
+    "contact": "تواصل معنا",
+    "address":"حضرموت - القطن - ساحة الحضارم - عمارة 25",
+    "mobile":"٠٩٦٧ - ٧٧٦٠٤٩٥٦٢"
+  },
+  "buttons": {
+    "bookVisit": "احجز زيارة",
+    "startToday": "ابدأ اليوم"
+  },
+  "welcome": {
+    "heading": "مرحبًا بكم في روضة أنامل الغد",
+    "kindergarten": "روضة متعددة اللغات\nتمهيدي، KG1، KG2"
+  },
+  "team": {
+    "name": "الاسم",
+    "role": "الدور",
+    "specialization": "التخصص",
+    "experience": "الخبرة",
+    "certifications": "الشهادات",
+    "OUR TEAM":"فريقنا"
+  },
+  "roles": {
+    "1 - 2 Years": "١ - ٢ سنوات",
+    "2 - 3 Years": "٢ - ٣ سنوات",
+    "3 - 4 Years": "٣ - ٤ سنوات",
+    "4 - 6 Years": "٤ - ٦ سنوات"
+  },
+  "specializations": {
+    "Motor activities": "أنشطة حركية"
+  },
+  "certifications": {
+    "Kindergarten": "رياض أطفال"
+  },
+  "ourprices": {
+    "YEAR": "السنة",
+    "TERM 1": "ترم 1",
+    "TERM 2": "ترم 2",
+    "TERM 3": "ترم 3",
+    "Month": "الشهر",
+    "Hours": " الساعة",
+    "ourprice" :"أسـعارنا",
+    "years" :"للعام  2024 - 2025 "
+  },
+ "dailySchedule": {
+    "Arrival and collection by the Teacher and Nannies on the Main Stage": "الوصول واستلام الأطفال من قبل المعلمات والمربيات على المسرح الرئيسي",
+    "Circle time": "وقت الحلقة",
+    "Educational Class Alfa Blocks read&write": "حصة تعليمية - ألفا بلوكس (قراءة وكتابة)",
+    "Breakfast": "وجبة الإفطار",
+    "Play/Gym/outdoors": "لعب / صالة رياضية / في الهواء الطلق",
+    "Finger Theater - active listening and analysis of the story": "مسرح الأصابع - الاستماع النشط وتحليل القصة",
+    "Neuro Class - brain stimulation activities (Neuro room)": "حصة تنشيط الدماغ - أنشطة تحفيز الدماغ (غرفة النيرو)",
+    "Morning":" الصباح",
+    "Noon":" المساء",
+    "dailySchedule tx":"الجدول اليومي",
+    "dailySchedule tx2":"توجد جداول زمنية مختلفة تناسب الأعمار المختلفة في مجموعات مختلفة. سيُطلعك المسؤول على الجدول الزمني الحالي لطفلك."
+  },
+  "reviews": {
+    "Samuel Willson": "راشد عبدالله ",
+    "I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.": "أعتقد أنه إذا قمت بشيء ما ونجح، فعليك أن تفعل شيئًا رائعًا آخر، لا أن تبقى عليه لفترة طويلة.",
+    "Creative director in DD agency": "المدير الإبداعي في وكالة DD",
+
+    "Alex Larkins": "محمد فيصل ",
+    "You can't connect the dots looking forward, you can only connect them looking backwards.": "لا يمكنك ربط النقاط وأنت تنظر إلى الأمام، يمكنك فقط ربطها وأنت تنظر إلى الوراء.",
+    "Founder of Pic Pen studio": "مؤسس استوديو بيك بن",
+
+    "Natalia": "سارة اليافعي",
+    "Lola, I want to express my gratitude to the entire kindergarten staff. There is such a drastic difference between what children were like at the beginning of the year and how they have grown up now. Today was a very rich and interesting program. Complex numbers. We really liked it. Great concert. We got a real aesthetic pleasure. You did well.": "لولا، أود أن أعبر عن امتناني لجميع موظفي الروضة. هناك فرق كبير بين ما كان عليه الأطفال في بداية العام وكيف أصبحوا الآن. كان البرنامج اليوم غنيًا وممتعًا جدًا. الأعداد المركبة. أحببناه كثيرًا. حفل رائع. استمتعنا بجمال العرض. أحسنتم.",
+    "Natalia, svyatoslav’s mother": "سارة ، والدة سفاتوسلاف",
+    "Reviews":"التـعليقات",
+    "commint":"انظر ماذا يقول أولياء أمور أبنائنا الطلبة عنا"
+  },
+  "footer": {
+    "ourContacts": "معلومات التواصل",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "message": "الرسالة",
+    "placeholder": "اكتب رسالتك هنا...",
+    "send": "إرسال",
+    "success": "تم إرسال طلبك بنجاح، سيتم الرد عليك خلال يوم"
+  }
 }
+

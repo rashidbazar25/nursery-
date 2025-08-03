@@ -4,9 +4,11 @@ import './Home.css'
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import LanguageSwitcher from './LanguageSwitcher';
-
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+     const { t } = useTranslation();
+   
   return (
     <>
         <div className='Navbar'>
@@ -16,8 +18,8 @@ const Navbar = () => {
                 <div><MapPin color='#ffffff'/></div>
 
                 <div style={{display:"flex", justifyContent:"center" , alignItems:"center" , gap:"20px" }}>
-                    <h3>Hadhramaut - Al-Qatn - Hadrami Square - villa 25</h3>
-                     <Phone size={18} color='#ffffff' /> <span style={{color:"white"}}> 00967 - 776049562</span>  
+                    <h3>{t('navbar.address')}</h3>
+                     <Phone size={18} color='#ffffff' /> <span style={{color:"white"}}>{t(`navbar.mobile`)} </span>  
                 </div>
             </div>
            </div>
@@ -29,17 +31,17 @@ const Navbar = () => {
 
         <div>
 
-          <Link className='link' to='/home'>Home</Link>
-          <Link className='link' to='/gallery'>Gallery</Link>
-          <Link className='link' to='/team'>TEAM</Link>
-          <Link className='link' to='/daycare'>Day Care</Link>
-          <Link className='link' to='/about'>About</Link>
-          <Link className='link' to='/contact'>contacts</Link>
+          <Link className='link' to='/home'>{t('navbar.home')}</Link>
+          <Link className='link' to='/gallery'>{t('navbar.gallery')}</Link>
+          <Link className='link' to='/team'>{t('navbar.team')}</Link>
+          <Link className='link' to='/daycare'>{t('navbar.daycare')}</Link>
+          <Link className='link' to='/about'>{t('navbar.about')}</Link>
+          <Link className='link' to='/contact'>{t('navbar.contact')}</Link>
 
         </div>
 
         <div>
-           <Link className='book-visit'  to=''>
+           <Link className='book-visit'>
              <Button style={{fontFamily:"Salsa"}} variant="outlined" color="secondary"
              onClick={() => {
              const footer = document.getElementById("footer");
@@ -47,7 +49,7 @@ const Navbar = () => {
                 footer.scrollIntoView({ behavior: "smooth" });
                  }
                }}
-             > BOOK A VISIT</Button>
+             > {t('buttons.bookVisit')} </Button>
 
            </Link>
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 const LanguageSwitcher = () => {
     const { i18n } = useTranslation();
@@ -18,7 +18,7 @@ const LanguageSwitcher = () => {
   return (
     <div>
         <button onClick={toggleLanguage}>
-      {i18n.language === 'ar' ? 'English' : 'العربية'}
+        {i18n.language === 'ar' ? 'English' : 'العربية'}
     </button>
     </div>
   )

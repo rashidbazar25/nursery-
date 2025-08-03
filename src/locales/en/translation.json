@@ -1,5 +1,93 @@
 {
-  "welcome": "Welcome to our website",
-  "kindergarten": "A Multi-Lingual Kindergarten",
-  "startToday": "START TODAY"
+  "navbar": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "team": "TEAM",
+    "daycare": "Day Care",
+    "about": "About",
+    "contact": "Contact",
+    "address":"Hadhramaut - Al-Qatn - Hadrami Square - villa 25",
+    "mobile":"00967 - 776049562"
+  },
+
+  
+  "buttons": {
+    "bookVisit": "BOOK A VISIT",
+    "startToday": "START TODAY"
+  },
+
+
+  "welcome": {
+    "heading": "Welcome to our website",
+    "kindergarten": "A Multi-Lingual Kindergarten\nPre-KG, KG1, KG2"
+  },
+
+
+  "team": {
+    "name": "Name",
+    "role": "Role",
+    "specialization": "Specialization",
+    "experience": "Experience",
+    "certifications": "Certifications",
+    "OUR TEAM":"OUR TEAM"
+  },
+  "roles": {
+    "1 - 2 Years": "1 - 2 Years",
+    "2 - 3 Years": "2 - 3 Years",
+    "3 - 4 Years": "3 - 4 Years",
+    "4 - 6 Years": "4 - 6 Years"
+  },
+  "specializations": {
+    "Motor activities": "Motor activities"
+  },
+  "certifications": {
+    "Kindergarten": "Kindergarten"
+  },
+  "ourprices": {
+    "YEAR": "YEAR",
+    "TERM 1": "TERM 1",
+    "TERM 2": "TERM 2",
+    "TERM 3": "TERM 3",
+    "Month": "4 weeks",
+    "hours": " Hours",
+    "ourprice" :"Our Price",
+     "years" :"For 2024 - 2025 years"
+  },
+   "dailySchedule": {
+    "Arrival and collection by the Teacher and Nannies on the Main Stage": "Arrival and collection by the Teacher and Nannies on the Main Stage",
+    "Circle time": "Circle time",
+    "Educational Class Alfa Blocks read&write": "Educational Class Alfa Blocks read&write",
+    "Breakfast": "Breakfast",
+    "Play/Gym/outdoors": "Play/Gym/outdoors",
+    "Finger Theater - active listening and analysis of the story": "Finger Theater - active listening and analysis of the story",
+    "Neuro Class - brain stimulation activities (Neuro room)": "Neuro Class - brain stimulation activities (Neuro room)",
+     "Morning":"Morning",
+    "Noon":"Noon",
+     "dailySchedule tx":"Daily schedule",
+    "dailySchedule tx2":"There are different age-appropriate schedules in different groups \n The administrator will give you your child's current schedule"
+},
+ "reviews": {
+    "Samuel Willson": "Samuel Willson",
+    "I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.": "I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.",
+    "Creative director in DD agency": "Creative director in DD agency",
+
+    "Alex Larkins": "Alex Larkins",
+    "You can't connect the dots looking forward, you can only connect them looking backwards.": "You can't connect the dots looking forward, you can only connect them looking backwards.",
+    "Founder of Pic Pen studio": "Founder of Pic Pen studio",
+
+    "Natalia": "Natalia",
+    "Lola, I want to express my gratitude to the entire kindergarten staff. There is such a drastic difference between what children were like at the beginning of the year and how they have grown up now. Today was a very rich and interesting program. Complex numbers. We really liked it. Great concert. We got a real aesthetic pleasure. You did well.": "Lola, I want to express my gratitude to the entire kindergarten staff. There is such a drastic difference between what children were like at the beginning of the year and how they have grown up now. Today was a very rich and interesting program. Complex numbers. We really liked it. Great concert. We got a real aesthetic pleasure. You did well.",
+    "Natalia, svyatoslav’s mother": "Natalia, svyatoslav’s mother",
+    "Reviews":"Reviews",
+    "commint":"Look what parents of our students say about us."
+  },
+   "footer": {
+    "ourContacts": "our contacts",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "placeholder": "Type your message here...",
+    "send": "Send",
+    "success": "Your request was sent successfully. We will get back to you within a day."
+  }
 }

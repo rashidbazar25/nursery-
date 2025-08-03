@@ -14,7 +14,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
    
     id: 2,
-    name: "4 weeks",
+    name: "Month",
     lineeone: "6,050 AED",
     linetow: "6,270 AED",
     linethree: "6,425 AED",

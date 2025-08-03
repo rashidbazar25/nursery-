@@ -7,6 +7,9 @@ import { BrowserRouter } from 'react-router-dom'
 import { store } from './store/store.js'
 import { Provider } from 'react-redux'
 import './i18n';
+import '@fontsource/tajawal'; // للغة العربية
+import '@fontsource/comfortaa'; // للإنجليزية
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
