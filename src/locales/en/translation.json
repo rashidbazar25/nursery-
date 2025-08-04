@@ -53,6 +53,8 @@
     "ourprice" :" Price",
      "years" :"For 2024 - 2025 years"
   },
+
+
    "dailySchedule": {
     "Arrival and collection by the Teacher and Nannies on the Main Stage": "Arrival and collection by the Teacher and Nannies on the Main Stage",
     "Circle time": "Circle time",
@@ -64,8 +66,12 @@
      "Morning":"Morning",
     "Noon":"Noon",
      "dailySchedule tx":"Daily schedule",
-    "dailySchedule tx2":"There are different age-appropriate schedules in different groups \n The administrator will give you your child's current schedule"
+    "dailySchedule tx2":"There are different age-appropriate schedules in different groups \n The administrator will give you your child's current schedule",
+    "time":"Time",
+    "activity":"Activity"
 },
+
+
  "reviews": {
     "Samuel Willson": "Samuel Willson",
     "I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.": "I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.",

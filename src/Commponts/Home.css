@@ -8,14 +8,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
 
 .links-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1; /* ✅ بدلاً من width: 100vw */
-  overflow: hidden; /* ✅ يمنع التمدد عند فتح select */
+  flex: 1;
+  overflow: hidden;
 }
 
 .link {
@@ -33,65 +37,87 @@
   border-bottom: 2px solid #2c3e50;
 }
 
+
 .navbar-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  height: 50px;
   width: 100%;
-  padding: 0 20px;
-    overflow: hidden; /* ✅ يمنع التمدد عند فتح السليكت */
-
 }
 
 .language-switcher {
   flex-shrink: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .Navbar-top-content {
-    flex-direction: column;
-    gap: 5px;
-    text-align: center;
-    padding: 10px 0;
-  }
+/* مخصص لحجم الشاشة */
+.language-switcher.small-screen {
+  display: none;
+}
 
-  .Navbar-top-content h3 {
-    font-size: 16px;
+.language-switcher.large-screen {
+  display: block;
+}
+
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* ========== الشاشات الصغيرة ========== */
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
   }
 
   .navbar-bottom {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    width: 100%;
     flex-direction: column;
-    height: auto;
-    padding: 10px 0;
+    align-items: flex-start;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    padding: 10px 20px;
   }
 
-  .navbar-bottom > div:first-child {
-    display: flex;
+  .navbar-bottom.open {
+    transform: translateY(0);
+  }
+
+  .links-nav {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .link {
     margin: 5px 0;
-    padding: 10px;
+    padding: 10px 0;
     font-size: 16px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
   }
 
-  .book-visit {
-    margin: 10px 0;
+  /* إخفاء السويتشر العادي، وإظهار الصغير */
+  .language-switcher.large-screen {
+    display: none;
+  }
+
+  .language-switcher.small-screen {
+    display: block;
+    padding-top: 10px;
+    width: 100%;
   }
 }
 
+/* ========== موبايل ========== */
 @media (max-width: 768px) {
   .link {
     font-size: 15px;
-  }
-
-  .navbar-bottom > div:first-child {
-    gap: 5px;
   }
 }
 
@@ -99,9 +125,5 @@
   .link {
     font-size: 14px;
     padding: 8px;
-  }
-
-  .book-visit {
-    margin: 5px 0;
   }
 }

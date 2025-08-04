@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import Carousel from 'react-bootstrap/Carousel';
 import { ChevronRight, ChevronLeft } from 'lucide-react'; // استيراد الأيقونات من Lucide
 import './Review.css';
@@ -9,15 +9,36 @@ const Reviews = () => {
 
     const reviews = useSelector((state)=>state.reviews);
    // console.log(reviews);
-     const { t } = useTranslation();
+     const { t , i18n } = useTranslation();
 
     
   return (
     <Container>
       <div className='reviews-content'>
         <div>
-            <h1 className='reviews'>{t(`reviews.Reviews`)}</h1>
-            <p className='pragraf-carousel'>{t(`reviews.commint`)}</p>
+           <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          sx={{
+            fontWeight: 'bold',
+            color: '#2c3e50',
+            fontFamily: i18n.language === 'ar' ? 'Tajawal' : 'Comfortaa',
+          }}
+        >{t(`reviews.Reviews`)}</Typography>
+
+         <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          sx={{
+            
+            color: '#2c3e50',
+            fontFamily: i18n.language === 'ar' ? 'Tajawal' : 'Comfortaa',
+          }}
+        >{t(`reviews.commint`)}</Typography>
+
+      
         </div>
 
         <div className='carousel'>

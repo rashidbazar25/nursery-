@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Select, MenuItem } from '@mui/material';
 
+
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const currentLang = i18n.language;

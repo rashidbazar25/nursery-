@@ -2,10 +2,17 @@ import './Home.css';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const location = useLocation();
   const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
 
   const links = [
     { to: '/home', label: 'navbar.home' },
@@ -18,7 +25,14 @@ const Navbar = () => {
 
   return (
     <div className='Navbar'>
-      <div className='navbar-bottom'>
+      {/* يظهر فقط على الشاشات الصغيرة */}
+      {!open ? (
+        <Menu size={28} onClick={() => setOpen(true)} className="menu-toggle" />
+      ) : (
+        <X size={28} onClick={() => setOpen(false)} className="menu-toggle" />
+      )}
+
+      <div className={`navbar-bottom ${open ? 'open' : ''}`}>
         <div className='links-nav'>
           {links.map((link, index) => (
             <Link
@@ -38,10 +52,17 @@ const Navbar = () => {
           ))}
         </div>
 
-       
-        <div className='language-switcher'>
+        {/* مكون تغيير اللغة (ثابت في الشاشات الكبيرة – يندمج في القائمة بالشاشات الصغيرة) */}
+        <div className='language-switcher large-screen'>
           <LanguageSwitcher />
         </div>
+
+        {/* مكون اللغة في الشاشات الصغيرة داخل القائمة */}
+        {open && (
+          <div className='language-switcher small-screen'>
+            <LanguageSwitcher />
+          </div>
+        )}
       </div>
     </div>
   );

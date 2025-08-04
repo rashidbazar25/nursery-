@@ -1,21 +1,23 @@
-.team-Containers{
-   padding-top:100px;
-
+.team-Containers {
+  padding-top: 100px;
 }
-.team-content-one{
+
+.team-content-one {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  width: fit-content; 
-  margin: 0 auto;        
-  padding: 20px; 
+  justify-content: center;
+  padding: 20px;
 }
 
-.team-content{
-    width: 400px;
-  
+.team-card {
+  background-color: #f9f6f2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 16px;
 }
-.our-team{
+
+.our-team {
   text-align: center;
   padding: 15px;
   font-size: 70px;

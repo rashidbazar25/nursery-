@@ -92,6 +92,19 @@ import { createSlice } from "@reduxjs/toolkit";
     experience: "6 Years",
     certifications:"Kindergarten",
   },
+  ,
+    
+
+  {
+
+    id: 9,
+    name: "Omer",
+    role: "1 - 2 Years",
+    photoUrl: "img-tem4.jpg",
+    Specialization: "Motor activities",
+    experience: "6 Years",
+    certifications:"Kindergarten",
+  },
     
     
  ]

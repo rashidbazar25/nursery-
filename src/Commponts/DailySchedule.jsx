@@ -1,78 +1,112 @@
-import { Container } from '@mui/material'
-import './DailySchedule.css'
-import hours from '../assets/hour.png'
-import { useSelector } from 'react-redux'
-import Carousel from 'react-bootstrap/Carousel';
+import {
+  Box,
+  Typography,
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+  TableContainer,
+  Paper,
+  Container
+} from '@mui/material';
+import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
-
 const DailySchedule = () => {
-
-    const daily = useSelector((state)=>state.dailaySchedule);
-   // console.log(daily);
-         const { t } = useTranslation();
+  const schedule = useSelector((state) => state.dailaySchedule);
+  const { t, i18n } = useTranslation();
 
   return (
-    <Container>
-        <div className='Daily-schedule-content'>
-            <div className='Daily-schedule-text-content'>
-                <h1 className='Daily-schedule-text'>{t(`dailySchedule.dailySchedule tx`)}</h1>
-                <p className='Daily-schedule-paragraf'>{t(`dailySchedule.dailySchedule tx2`)}</p>
-            </div>
+    <Container sx={{ mt: 6 }}>
+      <Box>
+        <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          sx={{
+            fontWeight: 'bold',
+            color: '#2c3e50',
+            fontFamily: i18n.language === 'ar' ? 'Tajawal' : 'Comfortaa',
+          }}
+        >
+          {t('dailySchedule.dailySchedule tx')}
+        </Typography>
 
+        <Typography
+          variant="subtitle1"
+          align="center"
+          sx={{
+            mb: 3,
+            color: '#7f8c8d',
+            fontFamily: i18n.language === 'ar' ? 'Tajawal' : 'Comfortaa',
+            whiteSpace: 'pre-line',
+          }}
+        >
+          {t('dailySchedule.dailySchedule tx2')}
+        </Typography>
 
+        <TableContainer
+          component={Paper}
+          elevation={1}
+          sx={{
+            borderRadius: 3,
+            backgroundColor: '#f9f6f2',
+            boxShadow: '0 2px 6px rgba(0, 0, 0, 0.05)',
+            overflowX: 'auto',
+          }}
+        >
+          <Table>
+            <TableHead>
+              <TableRow sx={{ backgroundColor: '#f1ece6' }}>
+                <TableCell  sx={{ fontWeight: 'bold', fontSize: 16, color: '#3c3c3c' }}>
+                  {t('dailySchedule.time')}
+                </TableCell>
+                <TableCell align="center" sx={{ fontWeight: 'bold', fontSize: 16, color: '#3c3c3c' }}>
+                  {t('dailySchedule.activity')}
+                </TableCell>
+              </TableRow>
+            </TableHead>
 
-            <div className='Daily-schedule-morning-content'>
-
-              <div style={{width:"300px"}}><h1 className='period'>{t(`dailySchedule.Morning`)}</h1></div>
-                <div className='Daily-schedule-morning-hours-content'>
-                 {
-                    daily.map((item,index)=>(
-                     <div key={index} className='Daily-schedule-morning-hours'>
-                      <div style={{borderRadius:"50%" , width:"60px"}}>
-                        <img className='img-hours' src={hours} alt='hours'/>
-                      </div>
-                      <div style={{width:"200px"}}><p className='time'>{item.time}</p></div>
-                      <div><h6 className='statement'>{t(`dailySchedule.${item.statment}`)}</h6></div>
-                    </div>
-
-                    ))
-                 }
-             
-
-                
-            </div>
-
-               
-            </div>
-
-
-
-
-
-
-            <div className='Daily-schedule-noon-content'>
-                <div style={{width:"300px"}}><h1 className='period'>{t(`dailySchedule.Noon`)}</h1></div>
-                <div className='Daily-schedule-morning-hours-content'>
-                 {
-                    daily.map((item,index)=>(
-                     <div key={index} className='Daily-schedule-morning-hours'>
-                      <div style={{borderRadius:"50%" , width:"60px"}}>
-                        <img className='img-hours' src={hours} alt='hours'/>
-                      </div>
-                      <div style={{width:"200px"}}><p className='time'>{item.time}</p></div>
-                      <div><h6 className='statement'>{t(`dailySchedule.${item.statment}`)}</h6></div>
-                    </div>
-
-                    ))
-                 }
-                
-            </div>
-              
-            </div> 
-     </div>
+            <TableBody>
+              {schedule.map((item, index) => (
+                <TableRow
+                  key={item.id}
+                  sx={{
+                    '&:hover': {
+                      backgroundColor: '#f0f0f0',
+                      transition: '0.3s ease',
+                      
+                    },
+                  }}
+                >
+                  <TableCell
+                    sx={{
+                      color: '#4b4b4b',
+                      fontWeight: 500,
+                      fontFamily: i18n.language === 'ar' ? 'Tajawal' : 'Comfortaa',
+                      
+                    }}
+                  >
+                    {item.time}
+                  </TableCell>
+                  <TableCell
+                   sx={{
+                       color: '#4b4b4b',
+                       fontFamily: i18n.language === 'ar' ? 'Tajawal' : 'Comfortaa',
+                       textAlign: 'center',
+                    }}
+                  >
+                    {t(`dailySchedule.${item.statment}`)}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Box>
     </Container>
-  )
-}
+  );
+};
 
-export default DailySchedule
+export default DailySchedule;

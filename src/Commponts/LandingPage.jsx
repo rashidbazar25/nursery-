@@ -6,13 +6,14 @@ import DailySchedule from './DailySchedule'
 import Welcome from './Welcome'
 import Reviews from './Reviews'
 import Foter from './Foter'
+import TabelPrice from './TabelPrice'
 
 const LandingPage = () => {
   return (
     <>
     <Container className='Containers' maxWidth="lg">
     <Welcome/>
-    <OurPrice/>
+    <TabelPrice/>
     <DailySchedule/>
     <Team/>
     <Reviews/>
