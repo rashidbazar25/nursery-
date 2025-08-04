@@ -1,8 +1,8 @@
 import Container from '@mui/material/Container';
 import './Daycare.css'
+import TabelPrice from './TabelPrice'
 import { useSelector } from 'react-redux';
 import baby from '../assets/baby.png'
-import OurPrice from './OurPrice';
 const Daycare = () => {
 
   const daycare = useSelector(state=>state.costPrice);
@@ -46,28 +46,11 @@ const Daycare = () => {
    }
      
         </div>
-
-
-
       </div>
-
-
-
-
-
-
-
-
-      <div className='daycare-bottom'>
-
-      </div>
-
-
-
       </div>
       
   </Container>  
-  <OurPrice/>
+ <TabelPrice/>
   </>
     )
 }
