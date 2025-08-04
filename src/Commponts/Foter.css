@@ -4,9 +4,17 @@
     align-items: center;
     width: 100%;
     height: 500px;
-    padding: 12px;
     margin-top: 60px;
-    background:  linear-gradient(to right, #065b94, #8e44ad) ;
+     background-image: 
+    linear-gradient(to bottom, rgba(249, 246, 242, 0.4), rgba(0, 0, 0, 0.8)),
+    url('../assets/lern.jpg'); /* غيّر المسار حسب مكان الصورة */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  color: white; /* لأن الأسفل غامق */
+    padding: 40px 20px;
 }
 .left-foter{
     display: flex;

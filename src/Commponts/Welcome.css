@@ -1,54 +1,41 @@
 .welcom-content-all {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* عمودين متساويين */
-  gap: 30px;
+  display: flex;
   align-items: center;
+  gap: 30px;
   margin-top: 30px;
   padding: 20px;
-  direction: inherit; /* ورث الاتجاه من الـ html */
-  
+  direction: inherit; /* يرث من html[dir=...] */
 }
 
-html[dir="rtl"] .welcom-content-all {
-  direction: rtl;
-}
-
-html[dir="ltr"] .welcom-content-all {
-  direction: ltr;
-}
+/* ترتيب العناصر بناء على الاتجاه */
 .welcom-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
   order: 1;
 }
 
 .welcom-right {
-  order: 2;
-}
-
-html[dir="rtl"] .welcom-left {
-  order: 2;
-}
-
-html[dir="rtl"] .welcom-right {
-  order: 1;
-}
-
-.welcom-left {
+  flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  order: 2;
 }
 
-.welcom-right  {
-  display: flex;
-  justify-content: right;
+/* عكس الترتيب في اللغة العربية */
+html[dir='rtl'] .welcom-left {
+  order: 2;
+}
 
+html[dir='rtl'] .welcom-right {
+  order: 1;
 }
 
 .welcom-right img {
   max-width: 100%;
   height: auto;
-
 }
 
 .welcom-text {
@@ -88,7 +75,7 @@ html[dir="rtl"] .welcom-right {
 
 @media (max-width: 768px) {
   .welcom-content-all {
-    grid-template-columns: 1fr; /* ✅ عمود واحد فقط */
+    flex-direction: column;
     text-align: center;
   }
 
@@ -113,10 +100,9 @@ html[dir="rtl"] .welcom-right {
   position: fixed;
   right: 20px;
   top: 50%;
-  cursor:pointer;
+  cursor: pointer;
   transform: translateY(-50%);
   transition: opacity 0.3s ease;
   opacity: 1;
   z-index: 1000;
 }
-

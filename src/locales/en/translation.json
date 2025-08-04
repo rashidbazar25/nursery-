@@ -94,6 +94,26 @@
     "message": "Message",
     "placeholder": "Type your message here...",
     "send": "Send",
-    "success": "Your request was sent successfully. We will get back to you within a day."
+    "success": "Your request was sent successfully. We will get back to you within a day.",
+     "subject": "Subject"
+  },
+   "subjects": {
+    "numbers": {
+      "address": "Numbers and Math",
+      "paragraph": "We teach numbers, addition, subtraction, shapes, patterns, and increasing measurements through fun and creative games."
+    },
+    "reading": {
+      "address": "Reading and Language Arts",
+      "paragraph": "The special reading curriculum covers the full pronunciation of reading, as well as songs, letter recognition, and parts of speech development."
+    },
+    "arts": {
+      "address": "Arts and Colors",
+      "paragraph": "The drawing and coloring program allows children to take advantage of lines, shapes, and colors to create creative works."
+    },
+    "world": {
+      "address": "The World Around Us",
+      "paragraph": "ABCmouse's science and social studies curriculum helps children understand the world they live in and inspires curiosity."
+    }
+   
   }
 }
