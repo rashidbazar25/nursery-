@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
- const initialState = [
+const initialState = [
   {
     id: 1,
     address: "subjects.numbers.address",
@@ -27,14 +27,18 @@ import { createSlice } from "@reduxjs/toolkit";
   },
 ];
 
-  
-
 const subjectSlice = createSlice({
-    name:"Team-slice",
-    initialState ,
-    reducers :{
+  name: "Subjects",
+  initialState,
+  reducers: {
+    addSubject: (state, action) => {
+      state.push(action.payload);
+    },
+    deleteSubject: (state, action) => {
+      return state.filter((item) => item.id !== action.payload);
+    },
+  },
+});
 
-    }
-})
-
+export const { addSubject, deleteSubject } = subjectSlice.actions;
 export const subjectSliceReduser = subjectSlice.reducer;

@@ -18,6 +18,7 @@ import Foter from './Commponts/Foter'
 
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import Dashbord from './Commponts/Dashbord'
 
 function App() {
    
@@ -43,6 +44,7 @@ function App() {
       <Route path='/team' element = {<Team/>} />
       <Route path='/daycare' element = {<Daycare/>} />
       <Route path='/contact' element = {<Contact/>} />
+      <Route path='/dashbord' element = {<Dashbord/>} />
 
           {/*  <Route 
      path='/home'

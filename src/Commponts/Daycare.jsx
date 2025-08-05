@@ -51,6 +51,8 @@ const Daycare = () => {
       
   </Container>  
  <TabelPrice/>
+
+
   </>
     )
 }

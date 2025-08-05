@@ -21,6 +21,7 @@ const Navbar = () => {
     { to: '/daycare', label: 'navbar.daycare' },
     { to: '/about', label: 'navbar.about' },
     { to: '/contact', label: 'navbar.contact' },
+    { to: '/dashbord', label: 'navbar.dashbord' },
   ];
 
   return (

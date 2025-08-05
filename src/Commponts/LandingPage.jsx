@@ -8,6 +8,7 @@ import Reviews from './Reviews'
 import Foter from './Foter'
 import TabelPrice from './TabelPrice'
 import Subjects from './Subjects'
+import MapLeaflet from './MapLeaflet'
 
 const LandingPage = () => {
   return (
@@ -20,6 +21,7 @@ const LandingPage = () => {
     <Team/>
     <Reviews/>
     </Container> 
+    <MapLeaflet/>
     </>
    
   )

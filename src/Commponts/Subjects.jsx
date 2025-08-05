@@ -67,7 +67,7 @@ const Subjects = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Card className="card" sx={{ backgroundColor: '#f9f6f2', boxShadow: '0px 2px 10px rgba(0,0,0,0.1)' }}>
+              <Card className="card" sx={{ backgroundColor: '#f9f6f2', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.08)' }}>
                 <CardMedia
                   component="img"
                   height="200"
