@@ -20,8 +20,8 @@ const LandingPage = () => {
     <DailySchedule/>
     <Team/>
     <Reviews/>
+     <MapLeaflet/>
     </Container> 
-    <MapLeaflet/>
     </>
    
   )

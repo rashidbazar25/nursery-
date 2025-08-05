@@ -9,3 +9,140 @@ body[lang="en"] {
   direction: ltr;
   font-family: 'Comfortaa';
 }
+
+
+
+
+
+
+/* ✅ تحسين تنسيق الموبايل لكامل المشروع */
+
+/* تعميم خصائص الحاويات */
+.Containers {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* ✅ Daycare تحسينات */
+@media (max-width: 768px) {
+  .daycare-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .day-care-text, .period {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .paragraf {
+    font-size: 15px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .sqear-content-all {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sqear-content {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+/* ✅ Dashboard تحسين التنسيق */
+@media (max-width: 768px) {
+  .MuiGrid-root {
+    justify-content: center;
+  }
+
+  .MuiTextField-root {
+    width: 100%;
+  }
+
+  .MuiButton-root {
+    width: 100%;
+  }
+}
+
+/* ✅ Arrow تثبيت السهم وتعديله */
+.arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.arrow.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ✅ Daily Schedule: جدول متجاوب */
+@media (max-width: 768px) {
+  .MuiTableCell-root {
+    font-size: 14px !important;
+    padding: 6px !important;
+  }
+
+  .MuiTypography-h4 {
+    font-size: 24px !important;
+  }
+
+  .MuiTypography-subtitle1 {
+    font-size: 14px !important;
+  }
+}
+
+/* ✅ Navbar تحسين إضافي */
+@media (max-width: 768px) {
+  .navbar-bottom {
+    padding: 20px !important;
+  }
+
+  .language-switcher.small-screen {
+    margin-top: 10px;
+  }
+}
+
+/* ✅ Footer */
+@media (max-width: 768px) {
+  .foter {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-foter, .right-footer {
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 0;
+  }
+}
+
+/* ✅ Welcome تعديل إضافي */
+@media (max-width: 480px) {
+  .welcom-text {
+    font-size: 22px;
+  }
+
+  .welcome-paragraf {
+    font-size: 18px;
+  }
+}
+
+/* ✅ تحسينات عامة */
+@media (max-width: 480px) {
+  .Containers {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
